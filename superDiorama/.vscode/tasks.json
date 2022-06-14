@@ -1,0 +1,44 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        //c,c++のbuildタスク
+        {
+            "label": "c",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o",
+                "main.exe",
+                "\n",
+                "./main.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        //processingのbuildタスク
+        {
+            "label": "Processing",
+            "command": "C:\\Users\\diddy\\processing-3.5.3-windows64\\processing-3.5.3\\processing-java.exe",
+            "type": "process",
+            "args": [
+                "--force",
+                "--sketch=${workspaceRoot}", //processingのパスはファイル名のディレクトリ下にただ一つだけしか作れないことに注意
+                "--run"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true //使う時だけここをtrueに
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
