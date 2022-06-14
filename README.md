@@ -1,6 +1,6 @@
 # processing でnintendo zone のような3Dモデルを作ってみた
 
-3DS デフォルトソフトの１つに,「[nintendo zone](https://www.nintendo.co.jp/nintendozone/)」がある. このパッケージデザインに似た 3D モデルを processing 言語を用いて作成してみた.
+Nintendo の 3DS デフォルトソフトの１つに,「[nintendo zone](https://www.nintendo.co.jp/nintendozone/)」がある. このパッケージデザインに似た 3D モデルを processing 言語を用いて作成してみた.
 
 <div align="center">
 <img src="./images/photo1.png" width="800" alt="作品">
